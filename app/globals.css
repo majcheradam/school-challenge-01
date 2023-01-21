@@ -3,17 +3,17 @@ body {
   margin: 0;
 }
 .video {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
 }
-.up {
-  position: fixed;
+.header-up {
+  position: relative;
   width: 100%;
   height: 28px;
-  background-color: #ffffff33;
+  background-color: #ffffff25;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,13 +22,87 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
-.up span {
+.header-up span {
   font-weight: bold;
 }
 a {
   color: inherit;
   text-decoration: none;
 }
-.up a:hover {
+.header-up a:hover {
   color: #b8b8b8;
+}
+.header-down {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+}
+.between {
+  width: 1050px;
+}
+.conteiner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 82vh;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+.content {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.content h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 50px;
+}
+.content p {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.button {
+  position: relative;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  width: 150px;
+  height: 35px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #dbdbdb;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
 }
