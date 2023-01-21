@@ -29,7 +29,13 @@ export default function Home() {
         </div>
         <div className="header-down">
           <a href="https://openai.com">
-            <Image src="/OpenAI_LL.png" alt="logo" width="120" height="30" />
+            <Image
+              src="/OpenAI_LL.png"
+              alt="logo"
+              width="120"
+              height="30"
+              className="logo"
+            />
           </a>
           <div className="between"></div>
           <nav>

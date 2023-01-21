@@ -22,6 +22,9 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
+.logo {
+  padding-right: 30px;
+}
 .header-up span {
   font-weight: bold;
 }
@@ -59,7 +62,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  height: 82vh;
+  height: 84vh;
   display: flex;
   justify-content: start;
   align-items: flex-end;
