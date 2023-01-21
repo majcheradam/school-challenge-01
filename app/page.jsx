@@ -2,13 +2,36 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main>
-      <h1>Cześć tu ______</h1>
-      <p>Chodzę do szkoły _________</p>
-      <span>Moja szkoła:</span>
-      {/* Wstaw tutaj zdjęcie szkoły kożystając z <Image/> */}
-      {/* Zdjęcie masz w folderze /public */}
-      {/* Ostyluj każdy element według uznania */}
-    </main>
+    <>
+      <video autoplay muted loop className="video">
+        <source src="Laptop.mp4" type="video/mp4" />
+      </video>
+
+      <header>
+        <div className="up">
+          <p>
+            <a href="https://chat.openai.com">
+              Introducing ChatGPT research release
+            </a>
+          </p>
+          <p>
+            <a href="https://chat.openai.com">
+              <span>Try</span>
+            </a>
+            <Image src="/Arrow_U.png" alt="" width="10" height="10" />
+          </p>
+          <p>
+            <a href="https://openai.com/blog/chatgpt">
+              <span>Learn more</span>
+            </a>
+            <Image src="/Arrow_L.png" alt="" width="10" height="10" />
+          </p>
+        </div>
+      </header>
+
+      <main></main>
+
+      <footer></footer>
+    </>
   )
 }
