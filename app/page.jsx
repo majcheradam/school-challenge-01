@@ -62,10 +62,12 @@ export default function Home() {
           <div className="content">
             <h1>Join us in shaping the future of technology.</h1>
             <div className="buttons">
-              <button className="button">
-                <Image src="/Arrow_BL.png" alt="" width="10" height="10" />
-                WATCH VIDEO
-              </button>
+              <a href="/laptop.mp4">
+                <button className="button">
+                  <Image src="/Arrow_BL.png" alt="" width="10" height="10" />
+                  WATCH VIDEO
+                </button>
+              </a>
               <p>
                 <a href="https://openai.com/careers/">VIEW CAREERS</a>
                 <Image src="/Arrow_L.png" alt="" width="20" height="10" />
@@ -194,38 +196,38 @@ export default function Home() {
               <Image
                 src="/Twitter_icon.png"
                 alt="Twitter"
-                width="25"
-                height="25"
+                width="23"
+                height="23"
               />
               <Image
                 src="/Youtube_icon.png"
                 alt="Youtobe"
-                width="25"
-                height="25"
+                width="23"
+                height="23"
               />
               <Image
                 src="/Github_icon.png"
                 alt="Github"
-                width="25"
-                height="25"
+                width="23"
+                height="23"
               />
               <Image
                 src="/Soundcloud_icon.png"
                 alt="Soundcloud"
-                width="25"
-                height="25"
+                width="23"
+                height="23"
               />
               <Image
                 src="/Linkedin_icon.png"
                 alt="Linkedin"
-                width="25"
-                height="25"
+                width="23"
+                height="23"
               />
               <Image
                 src="/Facebook_icon.png"
                 alt="Facebook"
-                width="25"
-                height="25"
+                width="23"
+                height="23"
               />
             </div>
           </div>

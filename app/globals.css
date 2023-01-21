@@ -151,7 +151,7 @@ li {
   position: absolute;
   color: #ffffff;
   bottom: 0;
-  height: 80px;
+  height: 70px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   display: flex;
@@ -162,9 +162,9 @@ li {
 .media {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 43px;
   align-items: center;
 }
 .bettwenb {
-  width: 700px;
+  width: 730px;
 }
