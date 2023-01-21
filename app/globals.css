@@ -109,3 +109,53 @@ a {
   gap: 15px;
   align-items: center;
 }
+.foother {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 1500px;
+  height: 430px;
+}
+.foother-cointeiner {
+  position: relative;
+  margin-top: 150px;
+  width: 1500px;
+  height: auto;
+}
+.flex-box {
+  position: relative;
+  width: 1500px;
+  display: flex;
+  justify-content: start;
+  gap: 270px;
+}
+.item {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.item p {
+  font-size: 13px;
+  font-weight: bolder;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+ul,
+li {
+  list-style-type: none;
+  line-height: 27px;
+  padding-left: 0px;
+  font-size: 16px;
+}
+.end {
+  position: absolute;
+  color: #ffffff;
+  bottom: 0;
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
