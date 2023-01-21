@@ -1,32 +1,39 @@
 import Image from 'next/image'
+import { Roboto } from '@next/font/google'
+import Link from 'next/Link'
+
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin-ext'],
+})
 
 export default function Home() {
   return (
-    <>
+    <div className={roboto.className}>
       <video src="Laptop.mp4" autoPlay muted loop className="video" />
 
       <header>
         <div className="header-up">
           <p>
-            <a href="https://chat.openai.com">
+            <Link href="https://chat.openai.com">
               Introducing ChatGPT research release
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="https://chat.openai.com">
+            <Link href="https://chat.openai.com">
               <span>Try</span>
-            </a>
+            </Link>
             <Image src="/Arrow_U.png" alt="" width="10" height="10" />
           </p>
           <p>
-            <a href="https://openai.com/blog/chatgpt">
+            <Link href="https://openai.com/blog/chatgpt">
               <span>Learn more</span>
-            </a>
+            </Link>
             <Image src="/Arrow_L.png" alt="" width="10" height="10" />
           </p>
         </div>
         <div className="header-down">
-          <a href="https://openai.com">
+          <Link href="https://openai.com">
             <Image
               src="/OpenAI_LL.png"
               alt="logo"
@@ -34,21 +41,21 @@ export default function Home() {
               height="30"
               className="logo"
             />
-          </a>
+          </Link>
           <div className="betweena"></div>
           <nav>
             <div className="nav-bar">
               <p>
-                <a href="https://openai.com/api/">API</a>
+                <Link href="https://openai.com/api/">API</Link>
               </p>
               <p>
-                <a href="https://openai.com/research/">RESEARCH</a>
+                <Link href="https://openai.com/research/">RESEARCH</Link>
               </p>
               <p>
-                <a href="https://openai.com/blog/">BLOG</a>
+                <Link href="https://openai.com/blog/">BLOG</Link>
               </p>
               <p>
-                <a href="https://openai.com/about/">ABOUT</a>
+                <Link href="https://openai.com/about/">ABOUT</Link>
               </p>
             </div>
           </nav>
@@ -60,14 +67,14 @@ export default function Home() {
           <div className="content">
             <h1>Join us in shaping the future of technology.</h1>
             <div className="buttons">
-              <a href="/laptop.mp4">
+              <Link href="/laptop.mp4">
                 <button className="button">
                   <Image src="/Arrow_BL.png" alt="" width="10" height="10" />
                   WATCH VIDEO
                 </button>
-              </a>
+              </Link>
               <p>
-                <a href="https://openai.com/careers/">VIEW CAREERS</a>
+                <Link href="https://openai.com/careers/">VIEW CAREERS</Link>
                 <Image src="/Arrow_L.png" alt="" width="20" height="10" />
               </p>
             </div>
@@ -84,19 +91,19 @@ export default function Home() {
                 <ul>
                   <p>FEATURED</p>
                   <li>
-                    <a href="https://openai.com/blog/chatgpt/">ChatGPT</a>
+                    <Link href="https://openai.com/blog/chatgpt/">ChatGPT</Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/dall-e-2/">DALL·E 2</a>
+                    <Link href="https://openai.com/dall-e-2/">DALL·E 2</Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/blog/whisper/">Whisper</a>
+                    <Link href="https://openai.com/blog/whisper/">Whisper</Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/alignment/">Alignment</a>
+                    <Link href="https://openai.com/alignment/">Alignment</Link>
                   </li>
                   <li>
-                    <a href="https://openai.fund">Startup Fund</a>
+                    <Link href="https://openai.fund">Startup Fund</Link>
                   </li>
                 </ul>
               </div>
@@ -104,27 +111,29 @@ export default function Home() {
                 <ul>
                   <p>API</p>
                   <li>
-                    <a href="https://openai.com/api/">Overview</a>
+                    <Link href="https://openai.com/api/">Overview</Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/api/pricing/">Pricing</a>
+                    <Link href="https://openai.com/api/pricing/">Pricing</Link>
                   </li>
                   <li>
-                    <a href="https://beta.openai.com/examples/">Examples</a>
+                    <Link href="https://beta.openai.com/examples/">
+                      Examples
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://beta.openai.com/docs/">Docs</a>
+                    <Link href="https://beta.openai.com/docs/">Docs</Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/api/policies/service-terms/">
+                    <Link href="https://openai.com/api/policies/service-terms/">
                       Terms & Policies
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://status.openai.com">Status</a>
+                    <Link href="https://status.openai.com">Status</Link>
                   </li>
                   <li>
-                    <a href="https://beta.openai.com/login/">Log in</a>
+                    <Link href="https://beta.openai.com/login/">Log in</Link>
                   </li>
                 </ul>
               </div>
@@ -132,25 +141,27 @@ export default function Home() {
                 <ul>
                   <p>BLOG</p>
                   <li>
-                    <a href="https://openai.com/blog/">Index</a>
+                    <Link href="https://openai.com/blog/">Index</Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/blog/tags/research/">
+                    <Link href="https://openai.com/blog/tags/research/">
                       Research
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/blog/tags/announcements/">
+                    <Link href="https://openai.com/blog/tags/announcements/">
                       Announcements
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/blog/tags/events/">Events</a>
+                    <Link href="https://openai.com/blog/tags/events/">
+                      Events
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/blog/tags/milestones/">
+                    <Link href="https://openai.com/blog/tags/milestones/">
                       Milestones
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -158,22 +169,26 @@ export default function Home() {
                 <ul>
                   <p>INFORMATION</p>
                   <li>
-                    <a href="https://openai.com/about/">About Us</a>
+                    <Link href="https://openai.com/about/">About Us</Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/charter/">Our Charter</a>
+                    <Link href="https://openai.com/charter/">Our Charter</Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/research/">Our Research</a>
+                    <Link href="https://openai.com/research/">
+                      Our Research
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/publications/">Publications</a>
+                    <Link href="https://openai.com/publications/">
+                      Publications
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/newsroom/">Newsroom</a>
+                    <Link href="https://openai.com/newsroom/">Newsroom</Link>
                   </li>
                   <li>
-                    <a href="https://openai.com/careers/">Careers</a>
+                    <Link href="https://openai.com/careers/">Careers</Link>
                   </li>
                 </ul>
               </div>
@@ -181,13 +196,13 @@ export default function Home() {
           </div>
           <div className="end">
             <p>
-              <a href="https://openai.com">OpenAI © 2015-2023</a>
+              <Link href="https://openai.com">OpenAI © 2015-2023</Link>
             </p>
             <p>
-              <a href="https://openai.com/privacy/">Privacy Policy</a>
+              <Link href="https://openai.com/privacy/">Privacy Policy</Link>
             </p>
             <p>
-              <a href="https://openai.com/terms/">Terms of Use</a>
+              <Link href="https://openai.com/terms/">Terms of Use</Link>
             </p>
             <div className="bettwenb"></div>
             <div className="media">
@@ -231,6 +246,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
