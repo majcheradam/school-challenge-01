@@ -3,9 +3,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      <video autoplay muted loop className="video">
-        <source src="Laptop.mp4" type="video/mp4" />
-      </video>
+      <video src="Laptop.mp4" autoPlay muted loop className="video" />
 
       <header>
         <div className="header-up">
