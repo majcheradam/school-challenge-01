@@ -37,7 +37,7 @@ export default function Home() {
               className="logo"
             />
           </a>
-          <div className="between"></div>
+          <div className="betweena"></div>
           <nav>
             <div className="nav-bar">
               <p>
@@ -189,6 +189,45 @@ export default function Home() {
             <p>
               <a href="https://openai.com/terms/">Terms of Use</a>
             </p>
+            <div className="bettwenb"></div>
+            <div className="media">
+              <Image
+                src="/Twitter_icon.png"
+                alt="Twitter"
+                width="25"
+                height="25"
+              />
+              <Image
+                src="/Youtube_icon.png"
+                alt="Youtobe"
+                width="25"
+                height="25"
+              />
+              <Image
+                src="/Github_icon.png"
+                alt="Github"
+                width="25"
+                height="25"
+              />
+              <Image
+                src="/Soundcloud_icon.png"
+                alt="Soundcloud"
+                width="25"
+                height="25"
+              />
+              <Image
+                src="/Linkedin_icon.png"
+                alt="Linkedin"
+                width="25"
+                height="25"
+              />
+              <Image
+                src="/Facebook_icon.png"
+                alt="Facebook"
+                width="25"
+                height="25"
+              />
+            </div>
           </div>
         </div>
       </footer>

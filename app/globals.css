@@ -54,7 +54,7 @@ a {
   justify-content: end;
   gap: 40px;
 }
-.between {
+.betweena {
   width: 1050px;
 }
 .conteiner {
@@ -158,4 +158,13 @@ li {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+}
+.media {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+.bettwenb {
+  width: 700px;
 }
